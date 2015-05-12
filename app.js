@@ -37,7 +37,7 @@ app.use('/preauth', preauth);
 app.use('/usePreauth', usePreauth);
 app.use('/creditAccount',creditAccount);
 app.use('/cancelPreauth',cancelPreauth);
-app.use('validateCard',validateCard);
+app.use('/validateCard',validateCard);
 app.use('/', preauth);
 
 
