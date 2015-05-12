@@ -15,7 +15,13 @@ var validateCard=require('./routes/validateCard')
 
 var app = express();
 
+var port = process.env.PORT || '3000';
+app.set('port', port);
 // view engine setup
+
+server=app.listen(port);
+
+
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'jade');
 
@@ -67,4 +73,4 @@ app.use(function(err, req, res, next) {
 });
 
 
-module.exports = app;
+
