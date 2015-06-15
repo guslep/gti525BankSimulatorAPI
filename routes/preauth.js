@@ -6,4 +6,8 @@ router.get('/', function(req, res, next) {
   res.json({transactionNumber:'123456789'});
 });
 
+router.post('/', function(req, res, next) {
+  res.json({transactionNumber:'123456789'});
+});
+
 module.exports = router;
